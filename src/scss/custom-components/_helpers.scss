@@ -1,0 +1,94 @@
+// Utilitários ------------------------------------
+
+// Cor texto ------------------------------------
+
+.purple-text {
+  color: var(--md-sys-color-primary) !important;
+}
+
+.blue-text {
+  color: var(--md-sys-color-secondary);
+}
+
+.orange-text {
+  color: var(--md-sys-color-tertiary) !important;
+}
+
+.green-text {
+  color: var(--quaternary-color) !important;
+}
+
+.purple-blue-text {
+  background-image: var(--gradient-purple-blue);
+  color: transparent;
+  background-clip: text;
+  display: inline-flex;
+}
+.blue-green-text {
+  background-image: var(--gradient-blue-green);
+  color: transparent;
+  background-clip: text;
+  display: inline-flex;
+}
+.orange-purple-text {
+  background-image: var(--gradient-orange-purple);
+  color: transparent;
+  background-clip: text;
+  display: inline-flex;
+}
+
+// Gradiente Fundo ------------------------------------
+
+.purple-blue-bg {
+  background-image: var(--gradient-purple-blue);
+}
+.blue-green-bg {
+  background-image: var(--gradient-blue-green);
+}
+.orange-purple-bg {
+  background-image: var(--gradient-orange-purple);
+}
+
+// IMG ------------------------------------
+
+.img--round {
+  border-radius: $border-radius-lg;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img--circle {
+  @extend .img--round;
+  border-radius: 50%;
+}
+
+.img--purple-shadow {
+  box-shadow: 0px 0px 15px rgba(87, 88, 227, 0.15);
+  border: 2px solid rgba(87, 88, 227, 0.15);
+}
+
+
+.all-rounded {
+  border-radius: $border-radius-lg;
+}
+
+// Flex ALinhamento ------------------------------------
+
+.flex--column {
+  flex-direction: column;
+  display: flex;
+}
+
+.flex--align-center {
+  align-items: center;
+  display: flex;
+}
+
+.flex--justify-center {
+  justify-content: center;
+  display: flex;
+}
+
+

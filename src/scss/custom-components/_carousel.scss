@@ -1,0 +1,83 @@
+
+// Carousel ------------------------------------
+
+.carousel-01 {
+    --carousel-height: 416px;
+    --carousel-item-height: 416px;
+    position: relative;
+    color: $text-color;
+  
+    height: var(--carousel-height) !important;
+  
+    & > .card {
+      box-shadow: none;
+      border: 2px solid rgba(87, 88, 227, 0.15);
+    }
+  
+    .carousel-fixed-item {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        padding: 6px;
+        cursor: pointer;
+        color: $text-color;
+      }
+      a:hover {
+        background-color: var(--md-ref-palette-primary95);
+      }
+    }
+    .carousel-item {
+      padding-bottom: 32px;
+      .row {
+        align-items: center;
+        height: 100%;
+      }
+      .img--round {
+        border-radius: 0;
+        object-fit: contain;
+      }
+    }
+    .previous,
+    .next {
+      cursor: pointer;
+    }
+    .indicators {
+      pointer-events: none;
+      left: 24px;
+      right: auto;
+      z-index: 3;
+      bottom: 10px !important;
+      .indicator-item.active {
+        background-color: var(--md-sys-color-primary);
+      }
+      .indicator-item {
+        background-color: var(--md-ref-palette-neutral90);
+      }
+    }
+  
+    @include tablet {
+      --carousel-height: 500px;
+      --carousel-item-height: 500px;
+    }
+  }
+  
+  .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 24px;
+    right: 24px;
+  }
+  
+  // Carousel para imagens altas
+  .carousel-02{
+    --carousel-height: 600px;
+    --carousel-item-height: 600px;
+   
+    @extend .carousel-01;
+    img{
+      min-height: 480px;
+    }
+    @include mobile {
+      --carousel-height: 940px;
+      --carousel-item-height: 940px;
+    }
+  }
+  

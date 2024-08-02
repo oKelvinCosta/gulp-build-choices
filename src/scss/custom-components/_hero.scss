@@ -1,0 +1,17 @@
+
+#hero {
+    background-color: var(--md-sys-color-surface);
+    background-image: url("../img/Hero.webp");
+    background-image: linear-gradient(rgba(209, 54, 49, 0), #5757e3d6),
+      url("../img/Hero.webp");
+    background-position: center 20%;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    @include tablet {
+      height: 80vh;
+    }
+  }

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 11 | Como vai sua alimentação?</title>
+  <link rel="icon" type="image/png" href="src/img/Favicon.png">
+
+  <!-- Fonts Gamay Editorial -->
+  <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
+
+  <!--Import Google Icon Font-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="src/css/main.css" media="screen" />
+
+
+  <!-- Vue DEV MODE -->
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+  <!-- Vue PROD MODE -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <!-- Scorm JS -->
+  <script src="src/js/scorm/APIWrapper.js" defer></script>
+  <script src="src/js/scorm/SCOFunctions.js" defer></script>
+  <script src="src/js/scorm/scorm-app.js" defer></script>
+
+  
+
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- Sidebar ---------------------------------- -->
+    <sidebar></sidebar>
+
+
+    <!-- Navbar ---------------------------------- -->
+    <navbar></navbar>
+
+
+    <!-- Hero Banner ---------------------------------- -->
+    <hero></hero>
+
+
+    <!-- Primeiro Conteúdo ---------------------------------- -->
+    <div class="top-rounded pt-10">
+      <h2 class="center-align mb-5 purple-text">Voltamos!</h2>
+      <div class="container">
+
+        <p class="body1 center-align"><b>Na última aula, entendemos como ocorre a digestão dos alimentos.</b></p>
+        <img-side-card src="src/img/aula/gif1.webp" alt="surpresa">
+          <div class="py-5">
+            <h3 class="mb-4">Hoje</h3>
+            <p>Hoje
+              Conheceremos um método para entender um pouco da nossa alimentação, descobrindo quantos nutrientes são
+              consumidos durante o dia.</p>
+          </div>
+        </img-side-card>
+
+
+
+
+        <h3 class="mb-7 purple-text center-align">Lembrando sempre que...</h3>
+
+        <div class="container--medium mb-12">
+          <div class="row">
+            <div class="col m6 s12">
+              <img class="img--round" src="src/img/aula/gif2.webp" alt="Beleza">
+              <p>Não somos nutricionistas e não podemos basear nossa alimentação em métodos que apenas dão suporte à
+                nossa compreensão.</p>
+            </div>
+            <div class="col m6 s12">
+              <img class="img--round" src="src/img/aula/gif3.webp" alt="Concordo">
+              <p>O método trabalhado aqui somente mostrará o que foi consumido.
+                <br>
+                Caso você verifique que os resultados são muito distantes do esperado, procure ajuda de um profissional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container--medium mb-7">
+          <h3 class="purple-text center-align mb-7">Vamos lá...</h3>
+          <img class="img--round" src="src/img/aula/gif4.webp" alt="Menina no celular">
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+    <!-- Aplicativo ---------------------------------- -->
+
+    <div id="aplicativo" class="scrollspy ">
+
+      <div class="container sobrepoe">
+        <div class="box-attention box-attention--blue">
+          <p class="body1 blue-text center-align">
+            <b>
+              E o método é…
+              <br>
+              Utilização de aplicativos de contagem de calorias. Aqui, usaremos um que pode ser baixado gratuitamente em
+              android e IOS.
+            </b>
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-gray pt-12 pb-10">
+        <div class="container--medium">
+          <div class="row">
+            <div class="col m4 s12">
+              <img class="img--round" src="src/img/aula/app.svg" alt="Aplicativo Macros">
+
+            </div>
+            <div class="col m8 s12 flex--align-center">
+              <div>
+                <h3 class="orange-text">O aplicativo</h3>
+                <p>Utilizaremos como exemplo o aplicativo Macros. Alguns celulares já contam com aplicativos instalados,
+                  que funcionam da mesma forma. A única diferença é a forma como os dados são inseridos e a interface.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container--medium mt-7 mb-10 aplicativo__items">
+        <div class="row">
+          <div class="col m9 s12">
+            <p class="orange-text"><b>Como baixar?</b> </p>
+            <p>Entre na loja de aplicativos do seu aparelho e baixe este app.</p>
+          </div>
+          <div class="col m3 s12">
+            <img class="img--circle" src="src/img/aula/gif5.webp" alt="Carregamento">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m9 s12">
+            <p class="orange-text"><b>Como mexer?</b></p>
+            <p>Vamos começar! Após baixar o aplicativo, a primeira página pedirá algumas informações referentes ao
+              sistema métrico. No Brasil, trabalhamos com centímetro (cm), para altura, e quilograma (Kg), para o peso.
+              <br>Escolha os itens e aperte GUARDAR.
+            </p>
+          </div>
+          <div class="col m3 s12 flex--align-center">
+            <img class="img--circle" src="src/img/aula/image 13app.jpg" alt="aplicativo">
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-10">
+        <carousel></carousel>
+      </div>
+
+
+
+
+    </div>
+
+    <!-- Agora é sua vez ---------------------------------- -->
+    <div id="sua-vez" class="scrollspy">
+      <div class="center-align">
+        <h1 class="orange-purple-text">Agora é sua vez!</h1>
+      </div>
+      <div class="full-img proxima-aula my-10">
+        <div class="full-img__legend py-4 container--medium">
+
+          <p>
+            Utilize este ou outro aplicativo para verificar como anda sua alimentação.
+            <br>Lembre-se: qualquer resultado muito diferente, que te deixe preocupado, consulte um nutricionista.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hora da reflexão ---------------------------------- -->
+    <div id="reflexao" class="scrollspy">
+
+      <div class="container">
+        <div class="box-attention box-attention--green mb-5">
+          <h3 class="body1 purple-text">
+            É hora da reflexão...
+          </h3>
+        </div>
+        <div class="box-attention box-attention mb-5">
+          <p>
+            <b>
+              1. O seu consumo de nutrientes está próximo ao esperado?
+            </b>
+          </p>
+        </div>
+        <div class="box-attention box-attention mb-5">
+          <p>
+            <b>
+              2. Você costuma observar a quantidade de nutrientes e calorias do alimento?
+            </b>
+          </p>
+        </div>
+        <div class="box-attention box-attention">
+          <p>
+            <b>
+              3. Você consideraria utilizar esse método no dia a dia?
+            </b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proxima aula ---------------------------------- -->
+
+    <div id="proxima-aula" class="scrollspy orange-purple-bg mb-10 mt-10 pb-12">
+      <img class="point-divider mb-12" src="src/img/aula/Point-divider.svg" alt="Divisor">
+      <div class="container">
+        <div class="row">
+          <div class="col m5 s12 flex--align-center">
+            <div>
+              <h3 class="white-text">Na próxima aula…</h3>
+              <p class="body1 white-text">Falaremos sobre as diferenças entre produtos naturais e aqueles que sofrem
+                modificações,
+                chamados de processados.</p>
+            </div>
+          </div>
+          <div class="col m7 s12">
+            <img class="img--round" src="src/img/aula/gif7.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <img class="img--round img--purple-shadow" src="src/img/aula/gif8.webp" alt="valeu-falou" />
+        </div>
+        <div class="col s12 m6 flex--align-center">
+          <h3>Valeu! Falou!</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concluir ---------------------------------- -->
+    <concluir></concluir>
+
+    <!-- Footer ---------------------------------- -->
+
+    <app-footer></app-footer>
+
+
+  </div>
+
+  <!-- Materialize JS -->
+  <script type="text/javascript" src="src/js/bin/materialize.js" defer></script>
+
+  <!-- App JS. JS customizado aqui -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+
+</html>

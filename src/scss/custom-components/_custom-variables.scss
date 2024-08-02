@@ -1,0 +1,183 @@
+// Importar variáveis padrões
+@import "../components/variables";
+
+// Arquivo Geral para variáveis
+
+// Sobrescrever com minhas variáveis
+
+// Tipografia ------------------------------------
+$font-stack: gamay-editorial, "Roboto", "Helvetica Neue", sans-serif;
+$display1-fontsize: 4.875rem; // 72px
+$h1-fontsize: 3.75rem; // 48px
+$h2-fontsize: 3.125rem; // 36px
+$h3-fontsize: 2.125rem; // 32px
+$h4-fontsize: 1.85rem; // 24px
+$h5-fontsize: 1.64rem; // 20px
+$h6-fontsize: 1.15rem; // 22px
+$body1-fontsize: 1.5rem; // 24px
+$body2-fontsize: 1.125rem; // 18px
+$body3-fontsize: 0.875rem; // 14px
+$default-fontsize: 16px;
+
+
+// texto cinza por padrao
+$text-color: var(--md-sys-color-on-background);
+
+$border-radius-lg: 23px;
+
+$spacing-values: (
+  "0": 0,
+  "1": 0.25rem,
+  "2": 0.5rem,
+  "3": 0.75rem,
+  "4": 1rem,
+  // 16px
+  "5": 1.5rem,
+  // 24px
+  "6": 2rem,
+  // 32px
+  "7": 2.5rem,
+  // 40px
+  "8": 3rem,
+  // 48px
+  "9": 3.75rem,
+  // 60px
+  "10": 5rem,
+  // 80px
+  "11": 6rem,
+  // 96px
+  "12": 9rem,
+  // 144px
+  "13": 11.5rem,
+  // 184px
+  "14": 15rem,
+  // 240px
+  "15": 18rem,
+  // 288px
+  "auto": auto,
+);
+
+// Paleta de Cor ------------------------------------
+// para serem usadas nas variáveis do tokens.module.scss
+:root {
+  // Cores precisam ser variáveis CSS, para poderem trocar seus valores dinamicamente
+
+  --md-source: #5758e3;
+  /* primary */
+  --md-ref-palette-primary0: #000000;
+  --md-ref-palette-primary10: #121233;
+  --md-ref-palette-primary20: #242466;
+  --md-ref-palette-primary25: #2c2c80;
+  --md-ref-palette-primary30: #353599;
+  --md-ref-palette-primary35: #3e3eb3;
+  --md-ref-palette-primary40: #4848cc;
+  --md-ref-palette-primary50: #5758e3; /* Cor principal */
+  --md-ref-palette-primary60: #7474e9;
+  --md-ref-palette-primary70: #9191ef;
+  --md-ref-palette-primary80: #aeaeff;
+  --md-ref-palette-primary90: #cbcbff;
+  --md-ref-palette-primary95: #e2e2ff;
+  --md-ref-palette-primary98: #f4f4ff;
+  --md-ref-palette-primary99: #fafaff;
+  --md-ref-palette-primary100: #ffffff;
+
+  /* secondary */
+  --md-ref-palette-secondary0: #000000;
+  --md-ref-palette-secondary10: #0a1c27;
+  --md-ref-palette-secondary20: #143948;
+  --md-ref-palette-secondary25: #1c4c61;
+  --md-ref-palette-secondary30: #256079;
+  --md-ref-palette-secondary35: #2f74a1;
+  --md-ref-palette-secondary40: #3988c9;
+  --md-ref-palette-secondary50: #6fb8ef; /* Cor principal */
+  --md-ref-palette-secondary60: #8ec9f3;
+  --md-ref-palette-secondary70: #addcf6;
+  --md-ref-palette-secondary80: #cceeff;
+  --md-ref-palette-secondary90: #e6f7ff;
+  --md-ref-palette-secondary95: #f0fbff;
+  --md-ref-palette-secondary98: #f8fdff;
+  --md-ref-palette-secondary99: #fcfeff;
+  --md-ref-palette-secondary100: #ffffff;
+
+  /* tertiary */
+  --md-ref-palette-tertiary0: #000000;
+  --md-ref-palette-tertiary10: #330b07;
+  --md-ref-palette-tertiary20: #66160e;
+  --md-ref-palette-tertiary25: #7a1c11;
+  --md-ref-palette-tertiary30: #8d2215;
+  --md-ref-palette-tertiary35: #a12818;
+  --md-ref-palette-tertiary40: #b42e1c;
+  --md-ref-palette-tertiary50: #ff624a; /* Cor principal */
+  --md-ref-palette-tertiary60: #ff846d;
+  --md-ref-palette-tertiary70: #ffaa92;
+  --md-ref-palette-tertiary80: #ffc4b4;
+  --md-ref-palette-tertiary90: #ffdad4;
+  --md-ref-palette-tertiary95: #ffece8;
+  --md-ref-palette-tertiary98: #fff5f3;
+  --md-ref-palette-tertiary99: #fffaf9;
+  --md-ref-palette-tertiary100: #ffffff;
+
+  /* neutral */
+  --md-ref-palette-neutral0: #000000;
+  --md-ref-palette-neutral10: #0a0d0f;
+  --md-ref-palette-neutral20: #1b2024;
+  --md-ref-palette-neutral25: #242a2e;
+  --md-ref-palette-neutral30: #2d3439;
+  --md-ref-palette-neutral35: #363e43;
+  --md-ref-palette-neutral40: #3f4850;
+  --md-ref-palette-neutral50: #3d4d58; /* Cor principal */
+  --md-ref-palette-neutral60: #64707c;
+  --md-ref-palette-neutral70: #8995a1;
+  --md-ref-palette-neutral80: #b0bbc4;
+  --md-ref-palette-neutral90: #d6dce2;
+  --md-ref-palette-neutral95: #eaedf0;
+  --md-ref-palette-neutral98: #f5f7f9;
+  --md-ref-palette-neutral99: #fbfdff;
+  --md-ref-palette-neutral100: #ffffff;
+}
+
+// tokens.module.scss ------------------------------------
+// Pra funcionar troca de tema light/dark preciso usar as variáveis do theme.module.scss nos components !
+// o theme.module.scss usa as cores dos tokens
+// Logo, precisa alterar somente a cor dos tokens.
+:root {
+  /* light */
+  --md-sys-color-primary-light: var(--md-ref-palette-primary50);
+  --md-sys-color-secondary-light: var(--md-ref-palette-secondary50);
+  --md-sys-color-tertiary-light: var(--md-ref-palette-tertiary50);
+  --md-sys-color-on-background-light: var(--md-ref-palette-neutral50);
+  --md-sys-color-background-light: #f9f9f9;
+}
+// Geral ------------------------------------
+:root {
+  // Cor do texto
+  --text-color: #{$text-color};
+
+  --quaternary-color: #dfff5a;
+
+  --gradient-purple-blue: linear-gradient(to right, #5758e3 25%, #6fb8ef 100%);
+  --gradient-blue-green: linear-gradient(
+    to bottom right,
+    #6fb8ef 59%,
+    #dfff5a 100%
+  );
+  --gradient-orange-purple: linear-gradient(to right, #ff624a 0, #5758e3 74%);
+  --gradient-orange-green: linear-gradient(to right, #dfff5a 0, #ff624a 100%);
+}
+
+// Breakpoints ------------------------------------
+// Media Queries
+@mixin tablet {
+  // 992.99px e abaixo
+  @media #{$medium-and-down} {
+    @content;
+  }
+}
+
+@mixin mobile {
+  // 600.99px e abaixo
+  @media #{$small-and-down} {
+    @content;
+  }
+}
+
