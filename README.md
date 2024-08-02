@@ -4,6 +4,7 @@
 - Otimiza imagens exceto .webp
 - Minifica JS
 - SCSS para CSS minificado
+- Purge CSS
 - Zipa dist para gerar o pacote SCORM
 - Transfere HTML de desenvolvimento para a pasta dist
 
