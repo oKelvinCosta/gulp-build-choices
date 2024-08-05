@@ -172,7 +172,7 @@ gulp.task("zip", () => {
   // Obtém o nome do diretório pai
   const dirname = path.basename(path.resolve());
   return gulp
-    .src("dist/**")
+    .src("dist/**", {encoding: false})
     .pipe(zip(`${dirname}_SCORM.zip`))
     .pipe(gulp.dest("dist"));
 });
